@@ -1,0 +1,27 @@
+<html>
+<head>
+    <link rel="stylesheet" href='/staticFiles/css/main.css' />
+  </head>
+    <body>
+    <center>
+      <h1 text_align='center' style="color:blue;">Entrez une image de chien</h1>
+
+      <form action='/predict' method="POST" enctype="multipart/form-data" >
+
+        <input type="file" name="uploaded-file" id="uploaded-file" accept=".png" hidden/>
+        <label for="uploaded-file">Sélectionner une image</label>
+
+        <br>
+        <br>
+
+        Class: {{result}}
+
+        <input type='submit' value='Predict'>
+      </form>
+      <div id="display_image">
+      </div>
+      <img src="{{ user_image }}" alt="Italian Trulli" width="500" height="400">
+    <hr>
+    </center>
+</body>
+</html>
