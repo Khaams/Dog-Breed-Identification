@@ -1,2 +1,6 @@
-# OC_project6
- Projet de classification de races de chien de OpenClassroom
+# Dog breef identification
+
+ Projet de classification de races de chien
+ - Keras 
+ - TensorFlow
+ - Pytorch
